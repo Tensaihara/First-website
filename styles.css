@@ -1,0 +1,120 @@
+a {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+a[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    text-align: center;
+}
+
+.pic {
+    text-align: center;
+    background: brown;
+    display: block;
+    margin: 0;
+
+
+}
+.logo-pic {
+    text-align: center;
+    display: block;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.ttl {
+    position: center;
+    align-content: center;
+    line-height: 1.4;
+    background-color: brown;
+    color: cornsilk;
+    text-align: center;
+    font-style: italic;
+    font-size: x-large;
+    margin: 0;
+}
+
+.custom {
+    background: blueviolet;
+}
+
+.container-fluid {
+    margin: 0;
+    background-color: brown;
+}
+
+.navbar-default {
+    margin: 0;
+    background-color: brown;
+}
+
+.navbar-brand{
+    color: cornsilk;
+    font-style: italic;
+    font-size: xx-large;
+}
+
+.navbar-expand-md {
+    margin: 0;
+}
+.navbar-w {
+    width: 300%;
+}
+.sz {
+    width: 90%;
+}
+
+.win {
+    width: 100%;
+
+}
+
+.ab {
+    width: 100%;
+}
+
+.tx {
+    position: center;
+    align-content: center;
+}
+
+.ttl2 {
+    position: center;
+    align-content: center;
+    background-color: brown;
+    color: cornsilk;
+    text-align: center;
+    font-style: italic;
+    font-size: x-small;
+    margin-top: 0;
+}
+
+.navbar-container {
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    height: 100vh;
+}
+.navbar-container .navbar {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 100%;
+}
+.navbar-container .navbar-collapse {
+    align-items: flex-start;
+}
+.navbar-container .nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.navbar-container .navbar-nav {
+    flex-direction: column !important;
+}
+

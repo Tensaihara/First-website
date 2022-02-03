@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alpina</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"  crossorigin="anonymous" >
+    <link rel="stylesheet" href="styles.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+<div class="ttl">
+<p>Тюнинг Ателье</p>
+    <p class="logo-pic"><img src="alpina.png" width="300" alt=""></p>
+</div>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <ul class="navbar-header container-fluid" style="background-color: brown">
+            <a class="navbar-brand" href="C:/Users/elmar/Desktop/preps/Бурнашев/try/main.html">Главное меню</a>
+            <a class="navbar-brand" href="./OtherHTML/TuningCatalog.html">Каталог обвесов</a>
+            <a class="navbar-brand" href="./OtherHTML/TuningSearch.html">Подбор обвеса</a>
+            <a class="navbar-brand" href="./OtherHTML/about.html">Создатель</a>
+            <a class="navbar-brand" href="./OtherHTML/map.html">Наши салоны</a>
+        <div class="collapse navbar-collapse" id="navbar-main">
+        </div>
+        </ul>
+    </div>
+</nav>
+<p class="pic"><img src = "image.png" height="498" width="1080" alt="" ></p>
+
+<div class="content-container container-fluid" style="background-color: cornsilk">
+    <h3>Расчет цены</h3>
+</div>
+
+<form>
+    <p class="alert alert-warning">
+        Расстояние<input placeholder="Введите расстояние от пункта отправления до пункта доставки(в км)" class="form-control" id="distance" type="text" /><br />
+    </p>
+    <p class="alert alert-warning">
+        Масса<input placeholder="Введите массу груза(в кг)" class="form-control" id="mass" type="text" /><br />
+    </p>
+    <p class="alert alert-warning">
+        Скорость<input placeholder="Введите количество дней, за которые нужно доставить груз" class="form-control" id="days" type="text" /><br />
+    </p>
+    <input type="button" id="submitBtn" class="btn btn-dark" value="Рассчитать ответ" onclick="addition();" />
+    <input type="button" id="clearBtn" class="btn btn-success" value="Очистить поля" onclick="setElementsValues();" />
+    <input type="button" id="saveBtn" class="btn btn-dark" value="Сохранить" onclick="saveToLocalStorage();" />
+    <input type="button" id="loadBtn" class="btn btn-dark" value="Чтение данных из истории" onclick="setFromLocalStorage();" />
+</form>
+<div id="result1"></div>
+<div id="result2"></div>
+<div id="result3"></div>
+<b>
+    <div id="result4"></div>
+</b>
+</body>
+
+</html>
